@@ -1,7 +1,9 @@
 <html>
     <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
         <title>Todo</title>
-        <meta http-equiv="Content-Script-Type" content="text/JavaScript" />
+        <meta http-equiv="Content-Script-Type" content="text/JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="script.js" defer ></script>
     </head>
     <body>
@@ -9,7 +11,7 @@
         <button id="clear" onclick="clearTasks()">Clear</button>
         <main>
             <form id="tasks" >
-                <input type="textarea" id="newTask">
+                <input type="textarea" id="newTask" placeholder="Add New Task">
             </form>
         </main>
     </body>

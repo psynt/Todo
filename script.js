@@ -77,7 +77,6 @@ function loadTasks(){
 }
 
 function saveTasks(){
-    taskStore = Object.fromEntries(Object.entries(taskStore).filter(([_, snd]) => !snd))
     localStorage.setItem("tasks", JSON.stringify(taskStore));
 }
 
@@ -87,6 +86,7 @@ function clearTasks(){
         .forEach(it => {
             it.parentElement.remove()
         })
+    taskStore = Object.fromEntries(Object.entries(taskStore).filter(([_, snd]) => !snd))
     saveTasks()
 }
 
