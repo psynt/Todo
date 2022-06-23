@@ -6,11 +6,9 @@
     </head>
     <body>
         <header> Todo Task List </header>
+        <button id="clear" onclick="clearTasks()">Clear</button>
         <main>
-            <form id="tasks" onSubmit="createTask(); return false;">
-                <!-- <div class="task"><input type="checkbox" id="task1"> <label for="task1"> Wake up </label></div> -->
-                <!-- <div class="task"><input type="checkbox" id="task2"> <label for="task2"> Brush teeth </label></div> -->
-                <!-- <div class="task"><input type="checkbox" id="task3"> <label for="task3"> Have breakfast</label></div> -->
+            <form id="tasks" >
                 <input type="textarea" id="newTask">
             </form>
         </main>
