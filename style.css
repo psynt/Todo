@@ -1,10 +1,23 @@
 body {
-    width: 80%;
+    width: 100%;
     font-size: 16px;
+    display: inline-grid;
+    grid-template-areas:
+        'header header header'
+        'menu main aside'
+        'menu footer footer';
+    gap: .2rem;
+    padding: .1rem;
 }
 
 header {
     font-size: 2rem;
+    text-align: center;
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
 }
 
 button {
